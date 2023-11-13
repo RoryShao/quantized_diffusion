@@ -1,0 +1,1 @@
+python scripts/sample_diffusion_ddim_v1.py --config configs/cifar10.yml --use_pretrained --timesteps 100 --eta 0 --skip_type quad --ptq --weight_bit 8 --quant_mode qdiff --cali_st 20 --cali_batch_size 32 --cali_n 256 --quant_act --act_bit 8 --a_sym --split --cali_data_path clib_data/cifar_sd1236_sample2048_allst.pt -l output_cifar10/
